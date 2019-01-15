@@ -1,14 +1,15 @@
 ﻿{
     "project":"GlobalSTORE",
-    "log":"logfile.txt",
+    "type":"dotnet",
+    "log":"gbc-log.txt",
     "system":"tfs",
-    "operation":"get|build|wrap",
+    "operation":"get|build|collect",
     "tfs" : {
-        "collection":"---",
-        "project":"$/---/",
-        "branch":"--",
-        "workspace":"--",
-        "location":"--",
+        "collection":"url of tfs here",
+        "project":"project path",
+        "branch":"branch to pull",
+        "workspace":"name of workspace",
+        "location":"local folder for workspace",
         "tf":"C:\\Program Files\\Microsoft Visual Studio 12.0\\Common7\\IDE\\tf.exe"
     },
     "get" : {
@@ -26,7 +27,7 @@
             "/---.sln"
         ]
     },
-    "wrap" : {
+    "collect" : {
         "output_folder":"c:\\Temp\\TestBuild\\",
         "outputs":[
             {
